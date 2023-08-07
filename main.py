@@ -1,6 +1,6 @@
-from flet import Page, Text, colors, app,\
+from flet import Page, Text, colors, app, \
     TextField, ListView, AlertDialog, icons, \
-    ElevatedButton, Column, MainAxisAlignment,\
+    ElevatedButton, Column, MainAxisAlignment, \
     Container, border, Row, IconButton, WEB_BROWSER
 
 from classes.message import Message

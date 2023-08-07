@@ -1,10 +1,13 @@
-# real-time-chat
-Chat em tempo real construído em python utilizando o Flet.
+# Real Time Chat
+Chat em tempo real construído em python utilizando o Flet e implementação de testes automatizados através do Selenium.
 
 ## Dependências do projeto
 
 - flet
 - selenium
+- typing (padrão do python)
+- unittest (padrão do python)
+- subprocess (padrão do python)
 
 ### Instalação
 
@@ -12,17 +15,17 @@ Chat em tempo real construído em python utilizando o Flet.
 pip install flet selenium
 ```
 
-## Execução do projeto
+## Execução
 
-Na pasta do projeto `path\real-time-chat`, execute no terminal o seguinte comando:
+Na pasta raiz do projeto (`path\real-time-chat`), execute o comando no terminal:
 
 ```
 python main.py
 ```
 
-## Execução dos testes do projeto
+## Testes
 
-Na pasta do projeto `path\real-time-chat`, execute no terminal o seguinte comando:
+Na pasta raiz do projeto (`path\real-time-chat`), execute o comando no terminal:
 
 ```
 python -m unittest discover -s .\tests\ -p "*_tests.py"

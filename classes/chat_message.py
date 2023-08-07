@@ -30,11 +30,13 @@ class ChatMessage(Row):
     def __init__(self, message: Message):
         super().__init__()
         self.vertical_alignment = "start"
+        self.color = get_avatar_color(message.user_name)
+        self.initial_letter = get_initials(message.user_name)
         self.controls = [
             CircleAvatar(
                 color=colors.WHITE,
-                bgcolor=get_avatar_color(message.user_name),
-                content=Text(get_initials(message.user_name)),
+                bgcolor=self.color,
+                content=Text(self.initial_letter),
             ),
             Column(
                 [

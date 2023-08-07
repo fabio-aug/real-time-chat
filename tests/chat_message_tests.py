@@ -1,10 +1,10 @@
 import unittest
+
 from classes.message import Message
 from classes.chat_message import ChatMessage, get_avatar_color, get_initials
 
 
 class ChatMessageTests(unittest.TestCase):
-
     def test_username(self):
         message = Message("user_name", "text_message", "chat_message")
         message_render = ChatMessage(message)
